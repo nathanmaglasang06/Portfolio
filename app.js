@@ -1,5 +1,5 @@
 function Home() {
-  window.location.href = "Portfolio.html";
+  window.location.href = "index.html";
 }
 window.addEventListener("scroll", function () {
   const scrollPosition = window.scrollY;
