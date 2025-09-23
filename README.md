@@ -1,2 +1,4 @@
 # Portfolio
-My portfolio, which is pretty bad, I dont do webdev so the code is 100% spaghetti
+HTML, Tailwind CSS and Java Script, portfolio I created for fun to try my hand at web development. 
+
+
