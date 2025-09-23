@@ -172,7 +172,7 @@ textarea.contact-inputs {
   transform: translate(-47.5%, -48%);
   width: 300px;
   height: 300px;
-  background: #a0a0a084;
+  background: #a0a0a000;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -190,9 +190,9 @@ textarea.contact-inputs {
 
 .eyes .eye {
   position: relative;
-  width: 20px;
-  height: 50px;
-  background: #ffffff92;
+  width: 15px;
+  height: 48px;
+  background: #ffffff00;
   border-radius: 50%;
   gap: 60px;
 }
@@ -231,7 +231,9 @@ textarea.contact-inputs {
 }
 
 .contact-container {
-  position: relative; /* gives the canvas a positioning context */
+  position: absolute;
+  align-self: center;
+  top: 20%; /* gives the canvas a positioning context */
   max-height: 10vh; /* ensures it has height to fill */
 }
 .memojilanding,

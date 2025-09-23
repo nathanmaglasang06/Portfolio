@@ -124,7 +124,7 @@ document.addEventListener("scroll", function () {
 const canvas = document.getElementById("particleCanvas");
 const context = canvas.getContext("2d");
 let circles = [];
-const dpr = window.devicePixelRatio || 1;
+const dpr = window.devicePixelRatio || 0.5;
 
 function resizeCanvas() {
   canvas.width = canvas.offsetWidth * dpr;
