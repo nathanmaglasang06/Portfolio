@@ -18,6 +18,7 @@ html {
   background-color: rgb(33, 33, 33);
   color: #fff;
 }
+
 body.contact-page {
   overflow-y: hidden;
   display: flex;
