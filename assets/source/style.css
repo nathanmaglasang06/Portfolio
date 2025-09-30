@@ -431,8 +431,67 @@ textarea.contact-inputs {
 }
 .Content.mywork{
   margin-top: 175px;
+  display: grid;
+  width: 75%;
+    grid-template-columns: repeat(3, 1fr);
 
 }
+.container{
+  display: grid;
+      grid-template-columns: repeat(3, 1fr);
+        margin-top: 175px;
+        height: fit-content;
+        max-height: 100%;
+
+
+}
+.projects-container {
+  display: flex;
+flex-direction: column;    
+border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    margin: 20px;
+    z-index: 3;
+  background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.title strong{
+    font-size: medium;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.description strong{
+    padding-top: 10px;
+      font-size: medium;
+    color: #ffffff;
+
+}
+
+.links {
+    display: flex;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a{
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid silver;
+    border-radius: 5%;
+    background: #00ddeb;
+}
+
 
 .Content .dot-pattern-demo .dotsub {
   border-color: white;
@@ -455,7 +514,7 @@ textarea.contact-inputs {
   grid-column: 1;
   border: white;
   border-radius: 8px;
-  font-size: 25px;
+  font-size: 3rem;
   font-weight: normal;
 }
 .memoji {
@@ -1694,7 +1753,6 @@ ul {
 body {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  height: 700vh;
   background: #d66d75;
   background: transparent;
 }
