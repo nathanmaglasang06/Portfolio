@@ -44,9 +44,8 @@ body.contact-page {
   top: 110px;
   width: 75%;
   z-index: 3;
-  
 }
- 
+
 .contact-left-title {
   font-size: 40px;
   margin-bottom: 5px;
@@ -74,13 +73,10 @@ body.contact-page {
   border-radius: 8px;
   border: 4px solid;
 }
-.contact-inputs.mywork{
-
-width: 100%;
+.contact-inputs.mywork {
+  width: 100%;
   text-align: center;
   position: relative;
-
-
 }
 .contact-left textarea {
   height: 140px;
@@ -230,6 +226,15 @@ textarea.contact-inputs {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 800px) {
+  .contact-inputs {
+    width: 80vw;
+  }
+  .contact-right {
+    display: none;
+  }
+}
+
 .landingpage {
   display: grid;
   grid-template-rows: 400px 100px 100px;
@@ -343,7 +348,7 @@ textarea.contact-inputs {
 }
 
 .button-64 span {
-  background-color: rgb(5, 6, 45);
+  background: linear-gradient(144deg, #4b0082, #2c3e50 50%, #8e44ad);
   padding: 16px 24px;
   border-radius: 6px;
   width: 100%;
@@ -430,70 +435,119 @@ textarea.contact-inputs {
   margin-bottom: 200px;
   overflow-y: auto;
 }
-.Content.mywork{
+.Content.mywork {
   margin-top: 175px;
   display: grid;
   width: 75%;
-    grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(3, 1fr);
 }
-.container{
+.container {
   display: grid;
-      grid-template-columns: repeat(3, 1fr);
-        margin-top: 175px;
-        height: fit-content;
-        max-height: 100%;
-
-
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 175px;
+  height: fit-content;
+  max-height: 100%;
 }
 .projects-container {
   display: flex;
-flex-direction: column;    
-border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 5px;
-    margin: 20px;
-    z-index: 3;
-  background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  flex-direction: column;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  margin: 20px;
+  z-index: 3;
+  backdrop-filter: blur(10px);
 }
-
+.commits {
+  margin: auto;
+}
 .header img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.title strong{
-    font-size: medium;
-    color: #ffffff;
-    border-bottom: 2px solid rgb(255, 255, 255);
+.title_work strong {
+  font-size: auto;
+  color: #ffffff;
 }
 
-.description strong{
-    padding-top: 10px;
-      font-size: medium;
-    color: #ffffff;
-
+.description strong {
+  padding-top: 10px;
+  font-size: medium;
+  color: #ffffff;
+}
+.description_work {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 100%;
+  height: 75%;
+  margin-bottom: 20px;
 }
 
 .links {
-    display: flex;
-    margin: 5px 0;
-    text-decoration: none;
-    color: #ffffff;
+  display: flex;
+  margin: 5px 0;
+  text-decoration: none;
+  justify-content: center;
+  color: #ffffff;
 }
 
-a{
-    padding: 10px;
-    margin: 5px;
-    border: 2px solid silver;
-    border-radius: 5%;
-    background: #00ddeb;
+a {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: auto;
+  border: 2px solid silver;
+  color: #ffffff;
+  border-radius: 8px;
+  background: linear-gradient(144deg, #4b0082, #2c3e50 50%, #8e44ad);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
+a:hover {
+  background: linear-gradient(
+    100deg,
+    #8e44ad,
+    #af40ff,
+    #5b42f3,
+    #00ddeb,
+    #8e44ad,
+    #af40ff,
+    #5b42f3,
+    #00ddeb,
+    #8e44ad,
+    #af40ff,
+    #5b42f3,
+    #00ddeb
+  );
+  background-size: 1200%;
+  animation: gradient-slide 9s linear infinite;
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(175, 64, 255, 0.6), 0 0 20px rgba(0, 221, 235, 0.4);
+}
 
+@keyframes gradient-slide {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.header_work {
+  display: flex;
+  font-size: 40px;
+  margin-bottom: 20px;
+  z-index: 2;
+  width: 90%;
+  justify-content: center;
+  background: linear-gradient(144deg, #4b0082, #2c3e50 50%, #8e44ad);
+  border-radius: 8px;
+}
 .Content .dot-pattern-demo .dotsub {
   border-color: white;
 }
@@ -1525,12 +1579,6 @@ ul {
 .example-2 .icon-content a[data-social="github"] ~ .tooltip {
   filter: none;
   background-color: #aa68f8;
-}
-
-.example-2 .icon-content a[data-social="youtube"] .filled,
-.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-  mix-blend-mode: normal;
-  background-color: #747474;
 }
 
 .slit-in-vertical {
