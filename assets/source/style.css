@@ -226,7 +226,7 @@ textarea.contact-inputs {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1150px) {
   .contact-inputs {
     width: 80vw;
   }
@@ -402,7 +402,7 @@ textarea.contact-inputs {
   color: #ffffff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
   .button-63,
   .button-64,
   .button-65 {
